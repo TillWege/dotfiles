@@ -1,0 +1,26 @@
+﻿<MonoDevelopProperties version="2.0">
+  <Property key="Dialogs.NewProjectDialog.LastSelectedCategoryPath" value="multiplat/app" />
+  <Property key="Dialogs.NewProjectDialog.LastSelectedTemplate" value="Xamarin.Forms.FlyoutShellApp" />
+  <Property key="Dialogs.NewProjectDialog.UseGit" value="True" />
+  <Property key="DotNetCore.DismissedSurveysList" />
+  <Property key="FavoriteRecentFiles" />
+  <Property key="MonoDevelop.Core.FirstRun" value="False" />
+  <Property key="MonoDevelop.Core.LastRunVersion" value="8.10.19.2" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.LastCheck" value="02/17/2022 23:54:38" />
+  <Property key="MonoDevelop.Ide.AddinUpdater.UpdateChannel" value="Stable" />
+  <Property key="MonoDevelop.Ide.UserInterfaceTheme" value="Dark" />
+  <Property key="Monodevelop.TaskList.ActiveView" value="MonoDevelop.Ide.Tasks.CommentTasksView" />
+  <Property key="OrganizationIdentifierKey" value="de.wegetill" />
+  <Property key="SharpDevelop.Workbench.WorkbenchMemento">
+    <Property key="bounds" value="0, 38, 1440, 862" />
+    <Property key="fullscreen" value="True" />
+    <Property key="windowState" value="0" />
+  </Property>
+  <Property key="TextEditor.F#.Specific.BackgroundAnalysisScopeOption" value="ActiveFile" />
+  <Property key="TextEditor.F#.Specific.Closed File Diagnostic" value="False" />
+  <Property key="TrialNotificationExpiryDays" value="13" />
+  <Property key="VisualStudio.Ide.Updater.UpdaterDialog.LastAutomaticOpen" value="02/15/2022 19:34:45" />
+  <Property key="XS.TargetedNotifications.DismissedList" />
+  <Property key="Xamarin.Ide.GetToCode.PromptForKeyBindings" value="False" />
+  <Property key="Xamarin.Ide.GetToCode.PromptForSignIn" value="False" />
+</MonoDevelopProperties>
