@@ -1,0 +1,108 @@
+{
+    "files.maxMemoryForLargeFilesMB": 8192,
+    "remote.SSH.remotePlatform": {
+        "wegetill.de": "linux",
+        "164.68.105.78": "linux"
+    },
+    "angular.experimental-ivy": true,
+    "tabnine.experimentalAutoImports": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "kite.showWelcomeNotificationOnStartup": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontFamily": "'ComicCodeLigatures Nerd Font', 'FiraCode Nerd Font'",
+    "editor.fontLigatures": true,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": ""
+        }
+    ],
+    "workbench.welcomePage.hiddenCategories": [
+        "Beginner",
+        "Setup"
+    ],
+    "browser-preview.format": "png",
+    "git.autofetch": true,
+    "kite.codefinder.enableLineDecoration": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "debug.javascript.autoAttachFilter": "disabled",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "redhat.telemetry.enabled": true,
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "editor.codeLensFontFamily": "cas",
+    "svg.preview.mode": "svg",
+    "debug.javascript.unmapMissingSources": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "files.associations": {
+        "*.html": "html"
+    },
+    "workbench.startupEditor": "none",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "vscode_custom_css.imports": [  
+        "file:///Users/tillwegener/.vscode/extensions/thecodemonkey.synthwave-x-fluoromachine-epic-animations-1.4.13/synthwave-x-fluoromachine.css",
+        "file:///Users/tillwegener/.vscode/extensions/thecodemonkey.synthwave-x-fluoromachine-epic-animations-1.4.13/epic-80s-transitions.css"
+    ],
+    "workbench.productIconTheme": "el-vsc-v1-icons",
+    "terminal.integrated.fontFamily": "firacode NF",
+    "eslint.validate": [
+        "typescript",
+        "typescriptreact"
+    ],
+    "cmake.configureOnOpen": true,
+    "cmake.preferredGenerators": [
+        "MinGW Makefiles",
+        "Unix Makefiles"
+    ],
+    "editor.minimap.enabled": false,
+    "zenMode.centerLayout": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "omnisharp.useGlobalMono": "always",
+    "workbench.sideBar.location": "right",
+    "editor.fontSize": 14,
+    "terminal.integrated.inheritEnv": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        // Name of the theme you are currently using
+        "[Atom One Dark]": {
+          "editorInlayHint.foreground": "#868686f0",
+          "editorInlayHint.background": "#282c34",
+    
+          // Overrides for specific kinds of inlay hints
+          "editorInlayHint.typeForeground": "#ffbb00f0",
+          "editorInlayHint.parameterForeground": "#ffbb00f0",
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "sync.gist": "a2787f1551482bf4c8654defe6fa0931",
+}

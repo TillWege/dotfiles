@@ -1,0 +1,167 @@
+[
+	{
+		"value": "Preparing request to http://localhost:3000/cards",
+		"name": "TEXT",
+		"timestamp": 1656451247666
+	},
+	{
+		"value": "Current time is 2022-06-28T21:20:47.666Z",
+		"name": "TEXT",
+		"timestamp": 1656451247666
+	},
+	{
+		"value": "Enable automatic URL encoding",
+		"name": "TEXT",
+		"timestamp": 1656451247666
+	},
+	{
+		"value": "Using default HTTP version",
+		"name": "TEXT",
+		"timestamp": 1656451247667
+	},
+	{
+		"value": "Enable SSL validation",
+		"name": "TEXT",
+		"timestamp": 1656451247667
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: INIT => CONNECT handle 0x13b80e808; line 1789 (connection #-5000)\n",
+		"timestamp": 1656451247668
+	},
+	{
+		"name": "TEXT",
+		"value": "Added connection 0. The cache now contains 1 members\n",
+		"timestamp": 1656451247668
+	},
+	{
+		"name": "TEXT",
+		"value": "family0 == v4, family1 == v6\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "  Trying 127.0.0.1:3000...\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: CONNECT => CONNECTING handle 0x13b80e808; line 1850 (connection #0)\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "Connected to localhost (127.0.0.1) port 3000 (#0)\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: CONNECTING => PROTOCONNECT handle 0x13b80e808; line 1982 (connection #0)\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: PROTOCONNECT => DO handle 0x13b80e808; line 2003 (connection #0)\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "HEADER_OUT",
+		"value": "GET /cards HTTP/1.1\r\nHost: localhost:3000\r\nUser-Agent: insomnia/2022.4.2\r\nContent-Type: application/json\r\nAccept: */*\r\nContent-Length: 0\r\n\r\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: DO => DID handle 0x13b80e808; line 2077 (connection #0)\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: DID => PERFORMING handle 0x13b80e808; line 2196 (connection #0)\n",
+		"timestamp": 1656451247669
+	},
+	{
+		"name": "TEXT",
+		"value": "Mark bundle as not supporting multiuse\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "TEXT",
+		"value": "HTTP 1.1 or later with persistent connection\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "HTTP/1.1 404 Not Found\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Cache-Control: no-store, must-revalidate\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Type: text/html; charset=utf-8\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Vary: Accept-Encoding\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Date: Tue, 28 Jun 2022 21:20:47 GMT\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Connection: keep-alive\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Keep-Alive: timeout=5\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Transfer-Encoding: chunked\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "\r\n",
+		"timestamp": 1656451247927
+	},
+	{
+		"name": "TEXT",
+		"value": "Received 11.8 KB chunk",
+		"timestamp": 1656451247928
+	},
+	{
+		"name": "TEXT",
+		"value": "Received 306 B chunk",
+		"timestamp": 1656451247928
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: PERFORMING => DONE handle 0x13b80e808; line 2395 (connection #0)\n",
+		"timestamp": 1656451247928
+	},
+	{
+		"name": "TEXT",
+		"value": "multi_done\n",
+		"timestamp": 1656451247928
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection #0 to host localhost left intact\n",
+		"timestamp": 1656451247928
+	},
+	{
+		"name": "TEXT",
+		"value": "Expire cleared (transfer 0x13b80e808)\n",
+		"timestamp": 1656451247928
+	}
+]
