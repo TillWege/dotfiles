@@ -8,5 +8,6 @@
 	email = tillwege@gmail.com
 [core]
 	autocrlf = false
+    excludesFile = ~/.gitignore
 [init]
-	defaultBranch = main
+    defaultBranch = main

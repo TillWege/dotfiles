@@ -46,6 +46,9 @@ function install_zsh {
     echo 'installing autosuggestions'
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+    echo 'installung syntax highlighting'
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
     echo 'checking if thefuck is already installed'
     if ! [ -x "$(command -v thefuck)" ]; then
         echo 'installing thefuck'
@@ -66,21 +69,23 @@ function install_zsh {
 }
 
 function link_dotfiles {
-    rm ~/.bash_logout
+    rm -f ~/.bash_logout
     ln -s $cwd/.bash_logout ~/.bash_logout
-    rm ~/.bashrc
+    rm -f ~/.bashrc
     ln -s $cwd/.bashrc ~/.bashrc
-    rm ~/.gitconfig
+    rm -f ~/.gitconfig
     ln -s $cwd/.gitconfig ~/.gitconfig
-    rm ~/.p10k.zsh
+    rm -f ~/.gitignore
+    ln -s $cwd/.gitignore ~/.gitignore
+    rm -f ~/.p10k.zsh
     ln -s $cwd/.p10k.zsh ~/.p10k.zsh
-    rm ~/.profile
+    rm -f ~/.profile
     ln -s $cwd/.profile ~/.profile
-    rm ~/.tmux.conf
+    rm -f ~/.tmux.conf
     ln -s $cwd/.tmux.conf ~/.tmux.conf
-    rm ~/.zshrc
+    rm -f ~/.zshrc
     ln -s $cwd/.zshrc ~/.zshrc
-    rm ~/.zshprofile
+    rm -f ~/.zprofile
     ln -s $cwd/.zprofile ~/.zprofile
 }
 
