@@ -21,6 +21,7 @@ function install_helix {
     if ! [ -x "$(command -v hx)" ]; then
         echo 'installing helix'
         brew install gcc
+        brew postinstall gcc
         brew tap helix-editor/helix
         brew install helix
     else
@@ -95,6 +96,7 @@ if [ "$plattform" = "Linux" ]; then
     install_zsh
     install_helix
     link_dotfiles
+    chsh -s $(which zsh)
 elif [ "$plattform" = "Darwin" ]; then
     echo 'running under MacOS'
     install_zsh
