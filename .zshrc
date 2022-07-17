@@ -129,6 +129,7 @@ plattform="$(uname -s)"
 
 if [ "$plattform" = "Linux" ]; then
     export PATH="$PATH:$HOME/.local/bin"
+    export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin/brew"
 elif [ "$plattform" = "Darwin" ]; then
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
