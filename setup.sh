@@ -58,7 +58,7 @@ function install_zsh {
     if ! [ -x "$(command -v fzf)" ]; then
         echo 'installing fzf'
         brew install fzf
-        $(brew --prefix)/opt/fzf/install
+        yes | $(brew --prefix)/opt/fzf/install
     else
         echo 'fzf is already installed'
     fi
@@ -70,17 +70,17 @@ function link_dotfiles {
     ln -s $cwd/.bash_logout ~/.bash_logout
     rm ~/.bashrc
     ln -s $cwd/.bashrc ~/.bashrc
-    ~/.gitconfig
+    rm ~/.gitconfig
     ln -s $cwd/.gitconfig ~/.gitconfig
-    ~/.p10k.zsh
+    rm ~/.p10k.zsh
     ln -s $cwd/.p10k.zsh ~/.p10k.zsh
-    ~/.profile
+    rm ~/.profile
     ln -s $cwd/.profile ~/.profile
-    ~/.tmux.conf
+    rm ~/.tmux.conf
     ln -s $cwd/.tmux.conf ~/.tmux.conf
-    ~/.zshrc
+    rm ~/.zshrc
     ln -s $cwd/.zshrc ~/.zshrc
-    ~/.zshprofile
+    rm ~/.zshprofile
     ln -s $cwd/.zprofile ~/.zprofile
 }
 
