@@ -1,2 +1,2 @@
 export PATH="$PATH:$HOME/.spicetify"
-. "$HOME/.cargo/env"
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"

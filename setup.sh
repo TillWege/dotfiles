@@ -96,6 +96,7 @@ if [ "$plattform" = "Linux" ]; then
     install_zsh
     install_helix
     link_dotfiles
+    chsh -s $(which zsh)
 elif [ "$plattform" = "Darwin" ]; then
     echo 'running under MacOS'
     install_zsh
