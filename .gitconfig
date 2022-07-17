@@ -7,7 +7,7 @@
 	name = Tillwege
 	email = tillwege@gmail.com
 [core]
-	autocrlf = false
+	autocrlf = input
     excludesFile = ~/.gitignore
 [init]
     defaultBranch = main

@@ -128,7 +128,7 @@ alias cls="clear"
 plattform="$(uname -s)"
 
 if [ "$plattform" = "Linux" ]; then
-    # ToDo WSL ENV's
+    export PATH="$PATH:$HOME/.local/bin"
 elif [ "$plattform" = "Darwin" ]; then
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
