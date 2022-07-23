@@ -31,7 +31,7 @@ function install_helix {
 
 function install_zsh {
     echo 'checking if zsh is already installed'
-    if ! [ -x "$(command -v hx)" ]; then
+    if ! [ -x "$(command -v zsh)" ]; then
         echo 'installing zsh'
         brew install zsh    
     else
