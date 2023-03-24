@@ -124,13 +124,36 @@ source $ZSH/oh-my-zsh.sh
 
 alias reload="source ~/.zshrc"
 alias cls="clear"
-    
+alias lx="exa --git --icons -l"
 plattform="$(uname -s)"
 
 if [ "$plattform" = "Linux" ]; then
+	alias ncspot="/mnt/c/Users/tillw/scoop/shims/ncspot.exe"
+    eval $(thefuck --alias)
     export PATH="$PATH:$HOME/.local/bin"
     export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
-    eval $(thefuck --alias)
+    export PATH="$PATH:$HOME/anaconda3/condabin"
+    export PATH="$PATH:/mnt/c/Users/tillw/AppData/Local/Microsoft/WindowsApps"
+    export PATH="$PATH:/mnt/c/Users/tillw/AppData/Local/Programs/Microsoft VS Code/bin"
+    export PATH="$PATH:/mnt/c/Program Files/Docker/Docker/resources/bin"
+    export PATH="$PATH:/mnt/c/ProgramData/DockerDesktop/version-bin"
+    export PATH="$PATH:/mnt/c/WINDOWS"
+    export PATH="$PATH:/snap/bin"
+
+    # conda initialize >>>
+    # !! Contents within this block are managed by 'conda init' !!
+    __conda_setup="$('/home/tillw/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "/home/tillw/anaconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/tillw/anaconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/tillw/anaconda3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+    # <<< conda initialize <<
 elif [ "$plattform" = "Darwin" ]; then
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
