@@ -66,7 +66,6 @@ function install_zsh {
     else
         echo 'fzf is already installed'
     fi
-        
 }
 
 function link_dotfiles {
@@ -88,20 +87,70 @@ function link_dotfiles {
     ln -s $cwd/.zshrc ~/.zshrc
     rm -f ~/.zprofile
     ln -s $cwd/.zprofile ~/.zprofile
+    mkdir ~/.config
+    mkdir ~/.config/zellij
+    mkdir ~/.config/zellij/layouts
+    rm -f ~/.config/zellij/config.kdl
+    ln -s $cwd/zellij-config.kdl ~/.config/zellij/config.kdl
+    rm -f ~/.config/zellij/layouts/main.kdl
+    ln -s $cwd/zellij-main.kdl ~/.config/zellij/layouts/main.kdl
+
+}
+
+function install_rust {
+    echo 'checking if Rust is already installed'
+    if ! [ -x "$(command -v rustc)" ]; then
+        echo 'installing Rust'
+        curl https://sh.rustup.rs -sSf | sh -s -- -y
+    else
+        echo 'Rust is already installed'
+    fi
+}
+
+function install_exa {
+    echo 'checking if exa is already installed'
+    if ! [ -x "$(command -v exa)" ]; then
+        echo 'installing exa'
+        cargo install exa
+    else
+        echo 'exa is already installed'
+    fi
+}
+
+function install_astro_nvim {
+    mv ~/.config/nvim ~/.config/nvim.bak
+    mv ~/.local/share/nvim ~/.local/share/nvim.bak
+    git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+}
+
+function install_zellij {
+    echo 'checking if zellij is already installed'
+    if ! [ -x "$(command -v zellij)" ]; then
+        echo 'installing zellij'
+        cargo install --locked zellij
+    else
+        echo 'zellij is already installed'
+    fi
+}
+
+function install_common {
+    install_zsh
+    install_helix
+    install_rust
+    install_exa
+    install_zellij
+    install_astro_nvim
+    link_dotfiles
 }
 
 if [ "$plattform" = "Linux" ]; then
     echo 'running under linux'
     install_brew
-    install_zsh
-    install_helix
-    link_dotfiles
+    install_common
     chsh -s $(which zsh)
 elif [ "$plattform" = "Darwin" ]; then
     echo 'running under MacOS'
-    install_zsh
-    install_helix
-    link_dotfiles
+    install_common
 else
     echo 'running under an unsuported OS (probably windows)'
     exit 1
