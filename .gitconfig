@@ -12,4 +12,4 @@
 [init]
     defaultBranch = main
 [credential]
-	helper = "!f() { /home/vscode/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/node /tmp/vscode-remote-containers-7b2e9adae4bfad796187f343160e2b7cd5dd0566.js $*; }; f"
+	helper = store
