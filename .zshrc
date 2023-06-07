@@ -124,12 +124,17 @@ source $ZSH/oh-my-zsh.sh
 
 alias reload="source ~/.zshrc"
 alias cls="clear"
-alias lx="exa --git --icons -l"
+alias ls="exa --git --icons -l -s type"
+alias c="clear"
+alias dir="ls"
 plattform="$(uname -s)"
 
 if [ "$plattform" = "Linux" ]; then
-	alias ncspot="/mnt/c/Users/tillw/scoop/shims/ncspot.exe"
-    eval $(thefuck --alias)
+    alias ncspot="/mnt/c/Users/tillw/scoop/shims/ncspot.exe"
+    alias docker="podman"
+    alias docker-compose="podman-compose"
+    alias "docker compose"="podman-compose"
+#    eval $(thefuck --alias)
     export PATH="$PATH:$HOME/.local/bin"
     export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
     export PATH="$PATH:$HOME/anaconda3/condabin"
