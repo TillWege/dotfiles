@@ -127,6 +127,7 @@ alias cls="clear"
 alias ls="exa --git --icons -l -s type"
 alias c="clear"
 alias dir="ls"
+alias lg="lazygit"
 plattform="$(uname -s)"
 
 if [ "$plattform" = "Linux" ]; then
